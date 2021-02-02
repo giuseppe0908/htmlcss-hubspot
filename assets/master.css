@@ -21,16 +21,20 @@
 }
 
  ul li a{
- /* text-transform: uppercase; */
+
  text-decoration: none;
- /* font-size: 10px; */
- /* color: white; */
+
  padding: 0 15px;
 }
 
-#caret-down{
+#caret-down a{
    border-right: 2px solid grey;
    padding-right: 15px;
+   color: black;
+}
+
+#color a{
+  color: black;
 }
 /* #caret-down:after{
     content: "\25bc";
@@ -39,11 +43,16 @@
 .float-right{
   float: right;
 }
+.fa-search{
+  color: lightblue;
+
+}
 /*--- FINE NAV ---*/
+
 /*--- BUTTON ---*/
 .btn{
-  border: 1px solid orange;
-  color: orange;
+  border: 1px solid #FE7759;
+  color: #FE7759;
   padding: 5px 16px;
   /* margin: 0px -6px; */
   border-radius: 10px;
@@ -51,13 +60,14 @@
 }
 
 .btn-orange{
-  background-color: orange;
+  background-color: #FE7759;
   border-radius: 5px;
   padding: 5px 7px;
   color: white;
   text-decoration: none;
 }
 /*--- FINE BUTTON ---*/
+
 /* UTILITY */
 .container{
   width: 80%;
@@ -71,7 +81,9 @@
 .seleziona{
   margin-top: 6px;
 }
+
 /*--- JUBO-TRON ---*/
+
 .bg-img{
   background-image: url(../assets/img8/jumbotron.png);
   height: 600px;
@@ -80,9 +92,11 @@
   background-repeat: no-repeat;
   width: 100%;
 }
+
  .text-jumbo{
    padding: 30px 0px;
  }
+
  .text-jumbo > h1{
     font-size: 50px;
     width: 35%;
@@ -96,11 +110,14 @@
 
 .div-jumbo{
   height: 80px;
-  background-color: cyan;
+  background-color: #AFEAE4;
   position: relative;
-  bottom: -112px;
+  bottom: -109px;
+  border-top: 2px solid black;
 }
+
 /*--- FINE JUMBO-TRON ---*/
+
 .btn-speciale{
   padding: 15px 25px;
 }
@@ -110,7 +127,7 @@
 
 /*--- MAIN ---*/
 .bg-grey{
-  background-color: lightgrey;
+  background-color: #F4F9FD;
 }
 #cubo{
   height: 150px;
@@ -126,8 +143,10 @@
 .section-book{
   height: 250px;
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid white;  /*non so perchè se elimino il bordo sale tutto sopra*/
+  border-radius: 5px;
 }
+
 #book{
   height: 100px;
 }
@@ -151,14 +170,14 @@
   padding: 20px 0px;
 
 }
-.h3-hr{
-/* vertical-align: 10px; */
+.h3-hr hr{
+    display:inline-bock;
 }
 .h3-hr > hr{
   margin: 0 auto;
   width: 30%;
   margin-bottom: 10px;
-/* vertical-align: middle; */
+
 }
 [class^="col-"]{
     float: left;
@@ -175,19 +194,27 @@
 .row{
   /* padding: 0px 15px; */
   text-align: center;
-  background-color: white;
+  /* background-color: white; */
 
 }
 .col-100{
   width: 100%;
 }
 .col-33{
-  width: calc(100% /3);
+  width: calc(100% *(1/3) - (20px));
   /* border: 1px solid black; */
   /* height: 300px: */
-  border:1px solid black;
+  /* width: calc(100% * 1/3 -(20px)); */
+  /* border:1px solid black; */
+  border-radius: 10px;
   margin-bottom: 50px;
+  margin-left: 0px;
+  background-color: white;
+  margin-right: 30px;
 
+}
+.col-33:last-child{
+  margin-right: 0px;
 }
 .col-33 p{
   padding: 20px 0px;
@@ -210,8 +237,8 @@
 .spunta li:before{
   content: "\2713";
   color: white;
-  border: 1px solid orange;
-  background-color: orange;
+  border: 1px solid #FE7759;
+  background-color: #FE7759;
   border-radius: 10px;
   font-size: 10px;
   padding: 0px 3px;
@@ -222,8 +249,7 @@
   height: 100px;
 }
 #bg-cyan{
-  background-color: cyan;
-  box-shadow: 0px 0px 10px 1px #cecece;
+  background-image: linear-gradient(45deg,#00a4bd,#00bda5);
   /* text-align: center; */
 }
 .grow{
@@ -240,12 +266,7 @@
 
   /* text-align: center; */
 }
-.riga{
-  /* text-align: left; */
-  /* display: inline-block; */
-  background-color: cyan;
 
-}
 .display-block{
   display: inline-block;
   width: 24%;
@@ -258,14 +279,14 @@
   margin-bottom: -30px;
   margin-top: -15px;
   /* padding-top: 20px; */
-  vertical-align: middle;
+  /* vertical-align: middle; */
   /* padding: 20px 0px; */
 
 }
 .font-size:after{
   content: "+";
   font-size: 25px;
-  vertical-align: middle;
+
 }
 .row > img{
   height: 30px;
@@ -281,7 +302,7 @@
 }
 .inbound{
   border-left: 1px solid white;
-  padding: 30px 0px;
+  /* padding: 30px 0px; */
 }
 .connect{
   border-top: 1px solid white;
@@ -343,25 +364,40 @@
 /*--- FOOTER ---*/
 footer{
   margin-top: 50px;
-  background-color: red;
+  background-color: #32485a;
+  color: white;
   height: 500px;
 }
- .inline-block  ul li{
-  display: block;
-}
-.accanto{
-  display: inline-block;
-  /* margin-top: 30px; */
-  margin-right: 80px;
 
+.allign-left{
+  text-align: left;
+}
+
+.colonna-20{
+  width: 20%;
+  float:left;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+.accanto li{
+  width: 100%;
 }
 .accanto li:first-child{
   margin-bottom: 10px;
-  text-decoration-style: bold;
+  /* text-decoration-style: bold; */
+
 }
- /* #lista-strana{
-  margin-top: 30px;
+.colonna-20 .accanto li{
+  padding: 5px 0px;
+
+}
+ .accanto li:first-child{
+  font-weight: bold;
+}
+/* .traffick {
+  padding-right: 20px;
 } */
+
 
 #btn-distanza{
   margin-bottom: 20px;
@@ -371,14 +407,15 @@ footer{
   background-color: white;
 }
 .inline{
-  display: inline;
   margin-top: 20px;
 }
- #text-center li{
-   text-align: center;
-  /* margin: 0 auto; */
-  display: inline-block;
+
+
+.language{
+  text-align: center;
+  padding-top: 60px;
 }
+
 .float-footer p{
   display: inline-block;
   margin-right: 10px;
