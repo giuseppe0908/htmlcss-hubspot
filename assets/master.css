@@ -1,16 +1,15 @@
+/*--- AZZERAMENTO ---*/
 *{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
+/*--- NAV ---*/
 .nav-bar{
   padding-top: 20px;
   margin-bottom: 20px;
-
-  /* position: fixed;
-  top: 0px;
-  left: 0px; */
 }
+
  ul{
   display: inline-block;
   list-style: none;
@@ -20,6 +19,7 @@
   display: inline-block;
   padding: 0px 5px;
 }
+
  ul li a{
  /* text-transform: uppercase; */
  text-decoration: none;
@@ -27,6 +27,7 @@
  /* color: white; */
  padding: 0 15px;
 }
+
 #caret-down{
    border-right: 2px solid grey;
    padding-right: 15px;
@@ -35,13 +36,11 @@
     content: "\25bc";
 } */
 
-/* .nav-bar{
-  height: 50px;
-  background-color: lightgrey;
-} */
 .float-right{
   float: right;
 }
+/*--- FINE NAV ---*/
+/*--- BUTTON ---*/
 .btn{
   border: 1px solid orange;
   color: orange;
@@ -50,23 +49,29 @@
   border-radius: 10px;
   margin-right: 10px;
 }
+
 .btn-orange{
   background-color: orange;
   border-radius: 5px;
   padding: 5px 7px;
   color: white;
+  text-decoration: none;
 }
+/*--- FINE BUTTON ---*/
 /* UTILITY */
 .container{
   width: 80%;
   margin: 0 auto;
 }
+
 #logo{
   margin-bottom: 20px;
 }
+
 .seleziona{
   margin-top: 6px;
 }
+/*--- JUBO-TRON ---*/
 .bg-img{
   background-image: url(../assets/img8/jumbotron.png);
   height: 600px;
@@ -88,16 +93,22 @@
    width: 45%;
    padding: 30px 0px;
  }
+
 .div-jumbo{
   height: 80px;
   background-color: cyan;
   position: relative;
   bottom: -112px;
 }
+/*--- FINE JUMBO-TRON ---*/
 .btn-speciale{
   padding: 15px 25px;
-
 }
+/* main{
+  height: 1000vh;
+} */
+
+/*--- MAIN ---*/
 .bg-grey{
   background-color: lightgrey;
 }
@@ -160,7 +171,7 @@
   clear: both;
   display: table;
  }
-
+/* DIVISIONE UNA RIGA E TRE COLONNE */
 .row{
   /* padding: 0px 15px; */
   text-align: center;
@@ -193,7 +204,9 @@
   display: block;
   text-align: left;
 }
-
+/* .spazio-sup{
+  margin-bottom: 20px;
+} */
 .spunta li:before{
   content: "\2713";
   color: white;
@@ -205,7 +218,7 @@
   margin: 0px 20px;
 
 }
-#img{
+.img{
   height: 100px;
 }
 #bg-cyan{
@@ -286,13 +299,87 @@
   border-left: 1px solid white;
   padding: 30px 0px;
 }
+
 .numeri{
-  padding: 40px 50px;
+  padding: 30px 70px;
+  margin-bottom: 40px;
 }
 .numeri p:first-child {
   font-size: 40px;
   padding: 20px 0px;
 }
+.float-right1{
+  float: right;
+  margin-top: -120px;
+}
 .loghi{
-  height: 20px;
+  height: 15px;
+  padding: 0px 10px;
+  padding-top: -100px;
+}
+.loghi-special{
+  height: 30px;
+  padding: 0px 10px;
+}
+.aria-img{
+  margin-top: 20px;
+}
+#with{
+  width: 30%;
+  margin-bottom: 40px;
+}
+#spazio{
+  margin-bottom: 40px;
+  width: 40%;
+}
+#margin-top{
+  margin-top: 40px;
+}
+#img-donna{
+  height: 300px;
+  margin-top: -300px;
+
+}
+/*--- FOOTER ---*/
+footer{
+  margin-top: 50px;
+  background-color: red;
+  height: 500px;
+}
+ .inline-block  ul li{
+  display: block;
+}
+.accanto{
+  display: inline-block;
+  /* margin-top: 30px; */
+  margin-right: 80px;
+
+}
+.accanto li:first-child{
+  margin-bottom: 10px;
+  text-decoration-style: bold;
+}
+ /* #lista-strana{
+  margin-top: 30px;
+} */
+
+#btn-distanza{
+  margin-bottom: 20px;
+}
+.btn-support{
+  color: black;
+  background-color: white;
+}
+.inline{
+  display: inline;
+  margin-top: 20px;
+}
+ #text-center li{
+   text-align: center;
+  /* margin: 0 auto; */
+  display: inline-block;
+}
+.float-footer p{
+  display: inline-block;
+  margin-right: 10px;
 }
